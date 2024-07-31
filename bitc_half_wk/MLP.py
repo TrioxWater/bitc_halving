@@ -1,3 +1,7 @@
+"""
+This script is used to predict the price of Bitcoin using the Multi-layer Perceptron (MLP) model.
+"""
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -9,7 +13,7 @@ plt.rcParams['font.sans-serif'] = ['SimHei']     # 显示中文
 plt.rcParams['axes.unicode_minus'] = False
 
 # 读取数据
-df1 = pd.read_csv("C:/Users/ASUS/Downloads/比特币历史数据 (1).csv")
+df1 = pd.read_csv("C:/Users/ASUS/Downloads/比特币历史数据.csv")
 
 # 将 'Date' 列转换为日期格式
 df1['日期'] = pd.to_datetime(df1['日期'])

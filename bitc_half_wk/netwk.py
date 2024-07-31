@@ -1,3 +1,7 @@
+"""
+T
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import tensorflow as tf
@@ -9,7 +13,7 @@ plt.rcParams['font.sans-serif'] = ['SimHei']  # 显示中文
 plt.rcParams['axes.unicode_minus'] = False
 
 # 读取CSV文件
-df = pd.read_csv("C:/Users/ASUS/Downloads/比特币历史数据 (1).csv")
+df = pd.read_csv("C:/Users/ASUS/Downloads/比特币历史数据.csv")
 
 # 将日期列转换为数值型
 df['日期'] = pd.to_datetime(df['日期'])
